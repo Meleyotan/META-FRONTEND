@@ -179,3 +179,11 @@ for (i = 0; i < 2; i++) {// loop through rows
 console.log(result)
 
 //Assignment: Refactor the code so it works for 3*3 matrix
+
+addPlus5 = (number) => {
+    number += 5
+    result = number >= 10 ? "Good" : "Bad" 
+    return ([number, result])
+}
+
+console.log(addPlus5(13))

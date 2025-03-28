@@ -177,3 +177,5 @@ for (i = 0; i < 2; i++) {// loop through rows
     }
 }
 console.log(result)
+
+//Assignment: Refactor the code so it works for 3*3 matrix

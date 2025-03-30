@@ -183,4 +183,44 @@ function getSecondLargest(nums) {
     return secondlargest
 }
 
-console.log(getSecondLargest([1,2,4,5,6,7,7,8,8,8,8,8,8,8,8,10,9,9]))
+console.log(getSecondLargest([1, 2, 4, 5, 6, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 10, 9, 9]))
+
+function reverseString(s) {
+    try {
+        s = s.split('').reverse().join('')
+        console.log(s)
+        }
+    catch (error) {
+        console.log(error.message)
+        console.log(s)
+    }
+}
+
+reverseString('yamal')
+
+function isPositive(a) {
+    try {
+        if (a > 0) {
+            console.log('YES')
+        }
+        else if (a == 0) {
+            throw new Error("ZeroError")
+        }
+        else {
+            throw new Error("Negative Error")
+        }
+    }
+    catch (error) { 
+        console.log(error.message)
+    }
+}
+
+try {
+    isPositive(-1)
+    isPositive(5)
+    isPositive(0)
+}
+catch(error){
+    console.log(error.message)
+}
+

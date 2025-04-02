@@ -116,3 +116,154 @@ styleAndCelebrate('ef7c8e', 'fae8e0', '30px', 'You made it!', 'champions');
 // Call styleAndCelebrate with appropriate arguments
 // WRITE YOUR CODE HERE
 
+class Dog{
+    constructor(color, breed) {
+        this.color = color
+        this.breed = breed
+        this.sound = "Bark!"
+    }
+    bark() {
+        console.log(this.sound)
+    }
+}
+
+let myDog1 = new Dog("blue", "Rotweiler")
+myDog1.bark()
+
+// create your classes here
+class Courses{
+    study(){
+        return 'Study'
+    }
+}
+class FECourse extends Courses{
+    study(){
+        console.log(super.study() + ' OOP')
+    }
+}
+class SECourse extends Courses{
+    study(){
+        console.log(super.study() + ' Manual Calculations')
+    }
+}
+
+class DACourse extends Courses{
+    study() {
+        console.log(super.study() + " the 'Ask Module'")
+    }
+}
+
+let fecourse = new FECourse()
+let secourse = new SECourse()
+let dacourse = new DACourse()
+fecourse.study()
+secourse.study()
+dacourse.study()
+
+
+class Animal{
+    constructor(color = 'yellow', energy = 100) {
+        this.color = color
+        this.energy = energy
+    }
+
+    isActive() {
+        if (this.energy > 20) {
+            this.energy -= 20
+            console.log(this.energy)
+        }
+        else if (this.energy <= 0) {
+             this.sleep()  
+        }
+    }
+    sleep() { 
+        this.energy += 20
+        console.log('Sleep')
+    }
+    getColor() {
+        console.log(this.color)
+    }
+}
+class Cat extends Animal { 
+    constructor(sound = 'purr', canJumpHigh = true, canClimbTrees = true, color, energy) {
+        super(color, energy)
+        this.sound = sound
+        this.canJumpHigh = canJumpHigh
+        this.canClimbTrees = canClimbTrees
+    }
+    makeSound() {
+        console.log(this.sound)
+    }
+}
+class Bird extends Animal {
+    constructor(sound = 'chirp', canFly = 'true', color, energy) {
+        super(color,energy)
+        this.sound = sound
+        this.canFly = canFly
+    }
+    makeSound() {
+        console.log(this.sound)
+    }
+ }
+class HouseCat extends Cat{
+    constructor(houseCatSound, sound, canJumpHigh, canClimbTrees, color, energy) {
+        super(sound, canJumpHigh, canClimbTrees,color,energy)
+        this.houseCatSound = houseCatSound
+    }
+    makeSound(option) {
+        if (option) {
+            super.makeSound()
+        }
+        else { 
+            console.log(this.houseCatSound)
+        }
+    }
+}
+class Tiger extends Cat{ 
+    constructor(tigerSound, sound, canJumpHigh, canClimbTrees, color, energy) {
+        super(sound, canJumpHigh, canClimbTrees, color, energy)
+        this.tigerSound = tigerSound
+    }
+     makeSound(option) {
+        if (option) {
+            super.makeSound()
+        }
+        else { 
+            console.log(this.tigerSound)
+        }
+    }
+}
+class Parrot extends Bird{ 
+    constructor(canTalk = false, sound, canFly, color, energy) {
+        super(sound, canFly, color, energy)
+        this.canTalk = canTalk
+    }
+    makeSound(option) {
+        if (option) {
+            super.makeSound() 
+        }
+        if(this.canTalk) {
+            console.log('I am a talking parrot')
+        }
+    }
+}
+
+var polly = new Parrot(true); // we're passing `true` to the constructor so that polly can talk
+var fiji = new Parrot(false); // we're passing `false` to the constructor so that fiji can't talk
+
+polly.makeSound(true); // 'chirp', 'I'm a talking parrot!'
+fiji.makeSound(); // 'chirp'
+
+console.log(polly.energy); // 100
+console.log(polly.color); // yellow
+
+polly.isActive(); // Energy is decreasing, currently at: 80
+
+var penguin = new Bird("shriek", false, "black and white", 200); // setting all the custom properties
+penguin; // Bird {color: 'black and white', energy: 200, sound: 'shriek', canFly: false }
+
+console.log(penguin.sound); // 'shriek'
+console.log(penguin.canFly); // false
+console.log(penguin.color); // 'black and white'
+console.log(penguin.energy); // 200
+penguin.isActive(); // Energy is decreasing, currently at: 180

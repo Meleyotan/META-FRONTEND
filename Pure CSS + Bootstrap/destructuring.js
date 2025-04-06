@@ -1,3 +1,6 @@
+
+import { } from 'lodash'
+
 //Destructuring the PI property of the Math object into the PI variable
 let { PI } = Math
 console.log(PI)
@@ -49,3 +52,12 @@ const modifyArray = (nums) => {
 }
 
 console.log(modifyArray([1,2,3,4,5,6,7,7]))
+
+
+try {
+    console.log(a+b)
+    throw new Error ('This is a Reference Error')
+}
+catch (error) { 
+    console.log(error.message)
+}

@@ -1,0 +1,7 @@
+native data types: null, undefined, string, number, float
+native object types: Math, Date, Object, Function, Boolean, Symbol, Array, Map, Set, Promise, JSON
+
+literals instead of constructors
+constructors create new instances of an object
+
+prototype, holds properties that can be shard by instances

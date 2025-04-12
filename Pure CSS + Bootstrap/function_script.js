@@ -162,7 +162,7 @@ function vowelsAndConsonants(s) {
 
     }
 }
-vowelsAndConsonants("")
+vowelsAndConsonants("eeeeqeeqeqsswwa")
 
 function getSecondLargest(nums) {
     let eachlargest = []

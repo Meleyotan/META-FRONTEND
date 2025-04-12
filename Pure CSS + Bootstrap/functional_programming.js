@@ -68,6 +68,7 @@ function consoleStyler(color, background, fontSize, txt) {
     
     // Log the message with the applied style
     // WRITE YOUR CODE HERE
+    console.log(style)
     console.log(message,style)
 }
 consoleStyler("blue", "yellow", "15px", "Meleyotan")

@@ -1,0 +1,147 @@
+once it reaches tablet, change the view
+
+if it is below, let every section fill the screen 
+
+if the elements inside a block-flowing container are inline elements, the inspect element will not add those orange at the top and bottom
+
+
+rm -rf
+npm link package name
+touch .gitignore
+
+thread of execution - running javascript code line by line
+memory 
+
+
+execution context - created to run the code of a function
+
+an execution context has both memory and thread of execution 
+
+thread of execution >> call stack
+
+why is functions in javascript a first class object?
+
+they are assigned to variables and properties of other objects
+
+passed as arguments into functions
+
+returned as values from functions
+
+UNIX bash commands
+man ls
+pwd
+cp
+mv
+
+flags - used to modify the behaviour of a command or extend the ability of a command
+relative and absolute path
+chmod
+
+navigate to directory
+ls files in the directory
+less some files to read their content
+vim test.sh
+insert with i
+esc to exit insert mode
+:w to save
+:wq! to save and exit
+chmod 755 [file name]to change file capability
+./[file name] to run
+
+I executed my first c code today after many years of not understanding it has a special command line that builds c codes
+I understood what powershell and command lines are for and how different they are: command line and powershell can communicate with your operating system
+Today, I understood protocols as set of rules provided under the internet standard for exchanging data 
+Basically client and server are the base communication points in computers
+pipe commands are actually executed in parallel
+
+drwxr-xr-x
+
+traverse
+create 
+rename 
+move
+touch
+piping 
+redirection
+chmod
+
+access control
+pull request
+automation
+
+md is just a shorthand for markdown
+
+
+check the protocol videos again and that particular one you watched yesterday
+read more about redirections
+reply and seek help on jest 
+check out simple open source project and try to create a pull request
+
+
+cloud host service that lets you host git repositories
+
+-la is short for list all 
+-l is for list ordereded(hidden files are left out)
+
+
+Git workflow
+modified: it knows that the file has been modified
+	git add for
+staged
+	git commit for
+commited
+
+git fetch
+git checkout is used to create a branch
+
+git checkout -B moves you to the branch
+
+git branch shows the branches that are available
+
+git push -u origin [name of branch] means the branch will only get update from the upstream
+
+git status
+untracked and unstaged
+
+Git add is a command that marks a file to be included as part of a code commit
+
+git add is used to stage a file or tell that a file should be tracked
+
+git works on the edit, stage and commit pattern
+
+
+pull request only comes automatically appears as a button after you push to the main/origin branch
+
+
+git clone 
+creating a clone to your machine is already a branch off the cloud repository
+you can use
+git checkout -B [name-of-branch] to further branch off your local repository
+git add .
+git commit m 'Your message between these quotes'
+git push -u origin [name-of-branch] with 
+
+this will create a pull request 
+
+no limit to the number of branches you can have
+ a team decides the naming conventions of branches
+
+Study these additional resources
+https://devhints.io/vim
+https://www.youtube.com/watch?v=4XpnKHJAok8
+
+i have commited a .txt file
+I want it ignored now
+
+if I make a change to the .txt file that has been added to my repository before, git still tracks it, how do I solve?
+
+
+Why do we stage?
+
+To select changes to commit. You may not want to commit some changes with some set of changes, staging you allows you to commit at different times.
+
+It allows you to commit incrementally, bit by biti 
+
+It allows you focus on sets of changes 
+
+old/new linestart lineend

@@ -32,3 +32,9 @@ var map = function(arr, fn) {
     }
     return combined_array
 };
+
+function add(n) {
+    return n + 1
+}
+
+console.log(map([1, 2, 3, 4]), function add(n) {n + 1})

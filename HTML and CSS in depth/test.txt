@@ -1,0 +1,5 @@
+open() function: it is used to open a file. You pass the file name as a string to it. 
+with statement: Ensures the file is properly closed after its block of code is executed.
+mode 'r': Opens the file in read mode (default mode)
+this approach is safer and avoids potential issues like leaving the file open
+I forgot to add this

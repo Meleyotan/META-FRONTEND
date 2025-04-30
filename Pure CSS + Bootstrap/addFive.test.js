@@ -1,4 +1,4 @@
-const addFive = require('./addFive')
+const addFive = require('../Programming with JS/addFive')
 
 test('returns the number plus 5', () => { 
     expect(addFive(1)).toBe(6);

@@ -1,5 +1,11 @@
 # Ignore node_modules directory
 node_modules/
+dist/
+# Ignore build artifacts
+build/
+# Ignore environment variables file
+.env
+.parcel-cache
 
 # Ignore temporary files
 *.tmp

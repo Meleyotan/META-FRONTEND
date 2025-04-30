@@ -1,5 +1,15 @@
+
 body {
+    font-family: sans-serif;
     margin: 2em 4em;
+    background-color: #145494;
+}
+
+.custom-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 .pure-menu-heading,

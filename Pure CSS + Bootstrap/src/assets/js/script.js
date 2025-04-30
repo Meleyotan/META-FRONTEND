@@ -188,6 +188,4 @@ addPlus5 = (number) => {
 
 console.log(addPlus5(13))
 
-let target = document.getElementById("time")
-target.innerHTML = new Date()
-target.innerHTML = target.innerHTML.split(" ", 4)
+

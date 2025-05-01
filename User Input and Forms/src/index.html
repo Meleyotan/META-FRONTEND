@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
 
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
 
     <h1>Sign Up</h1>
@@ -42,9 +44,105 @@
         </div>
 
         <div>
+            <fieldset id="size">
+                <label><input type="radio" name="size" value="1">1-person table</label><!--The input it wrapped inside the label to make the radio and text clickable on mobile, it gives a good user experience-->
+                <label><input type="radio" name="size" value="2">2-person table</label>
+                <label><input type="radio" name="size" value="3">3-person table</label>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset id="location">
+                <label><input type="radio" name="location" value="indoors">Indoors</label>
+                <label><input type="radio" name="location" value="outdoors">Outdoors</label>
+            </fieldset>
+        </div>
+
+        <fieldset>
+            <legend>Booking</legend>
+            <label for="booking_date">Date</label>
+            <input type="date" id="booking_date" name="booking_date" value="">
+
+            <label for="booking_people">Number of People</label>
+            <input type="range" id="booking_people" name="booking_people" value="4" min=1 max=10
+                oninput="this.nextElementSibling.value = this.value">
+            <output>4</output>
+
+            <label for="booking_location">Location</label>
+            <input list="locations" id="booking_location" name="booking_location" required>
+            <datalist id="locations">
+                <option value="Downtown"></option>
+                <option value="Uptown"></option>
+                <option value="Chinatown"></option>
+                <option value="Kenttown"></option>
+                <option value="Santown"></option>
+                <option value="Towtown"></option>
+            </datalist>
+        </fieldset>
+
+        
+            <fieldset>
+                <legend>Rating</legend>
+                <div>
+                <label for="rating">Rating</label>
+                <input type="range" min="1" max="5" id="rating" name="rating" list="ratings">
+                <datalist id="ratings">
+                    <option value="1" label="1"></option>
+                    <option value="2" label="2"></option>
+                    <option value="3" label="3"></option>
+                    <option value="4" label="4"></option>
+                    <option value="5" label="5"></option>
+                </datalist>
+                </div>
+                <button type="submit">Submit Rating</button>
+            </fieldset>
+            
+
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Qualificaiton</legend>
+            <label for="pdegree">Primary degree:</label><br>
+            <input type="text" id="pdegree" name="degree" value="Masters"><br>
+            <label for="fos">Last name:</label><br>
+            <input type="text" id="fos" name="field" value="Psychology"><br>
+        </fieldset>
+
+        <div>
+            <label for="course">Choose a course:</label><br>
+            <select id="course" name="courselist">
+                <optgroup label="Courses">
+                    <option value="html">HTML Introduction</option>
+                    <option value="css">Styling with CSS</option>
+                    <option value="js">JavaScript</option>
+                    <option value="react">React Basics</option>
+                </optgroup>
+                <optgroup label="Names">
+                    <option value="html">HTML Introduction</option>
+                    <option value="css">Styling with CSS</option>
+                    <option value="js">JavaScript</option>
+                    <option value="react">React Basics</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <!-- <video controls>
+            <source src="./assets/vid/0315(1).mp4" type="video/mp4">
+        </video> -->
+
+        <div>
             <button type="submit">Sign up</button>
         </div>
 
+
+
     </form>
 </body>
+
 </html>

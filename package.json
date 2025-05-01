@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "dev": "parcel",
-    "build": "parcel build"
+    "build": "parcel build ./Pure CSS + Bootstrap/src/index.html"
   },
   "keywords": [],
   "author": "",

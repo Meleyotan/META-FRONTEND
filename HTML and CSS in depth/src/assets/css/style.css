@@ -119,6 +119,24 @@ select#ic_asset_type {
 .label{
     display: flex;
 }
+.b1{
+    width: 50px;
+    height: 50px;
+}
+.bar-chart{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.b01{
+    flex-basis: 50%;
+}
+.b02 {
+    flex-basis: 30%;
+}
+.b03 {
+    flex-basis: 20%;
+}
 
 @media (min-width: 600px) and (max-width: 768px) {
     .image-container>div>img {

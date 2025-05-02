@@ -84,6 +84,42 @@ input:focus {
     width: 320px;
     border-radius: 5px;
 }
+
+.ic-search-container{
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 0;
+    gap: 10px;
+    align-items: center;
+}
+.input-ic-search {
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    padding-left: 20px;
+}
+select#ic_asset_type {
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    background-color: #d4dde7;
+    padding: 10px;
+}
+
+.form-ic-search-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-by-image-button{
+    padding: 10px;
+}
+
+.label{
+    display: flex;
+}
+
 @media (min-width: 600px) and (max-width: 768px) {
     .image-container>div>img {
         width: 340px;

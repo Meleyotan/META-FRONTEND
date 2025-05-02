@@ -1,0 +1,120 @@
+body {
+    margin: 2rem;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.box {
+    background-color: aquamarine;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 10px;
+}
+
+.box3 {
+    background-color: blanchedalmond;
+    align-self: center;
+}
+
+.search-container {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.search-icon {
+    padding: 0 4px;
+}
+
+.search-box {
+    border: 0;
+}
+
+form {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+input:focus {
+    outline: none;
+    border: 0;
+    box-shadow: none;
+}
+
+.search-button {
+    border: 0;
+    background-color: #0f4a8a;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    padding: 8px;
+}
+
+.nav-container {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: end;
+    gap: 15px;
+}
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.image-container > div > img {
+    display: inline-block;
+    width: 320px;
+    border-radius: 5px;
+}
+@media (min-width: 600px) and (max-width: 768px) {
+    .image-container>div>img {
+        width: 340px;
+    }
+
+    .nav-container {
+        flex-flow: row;
+        align-items: center;
+    }
+
+}
+
+@media (min-width: 375px) and (max-width: 600px) {
+    .image-container>div>img {
+        width: 100%;
+    }
+
+    .nav-container {
+        align-items: center;
+    }
+} 
+
+@media screen and (max-width: 375px) {
+    .image-container > div > img {
+        width: 260px;
+    }
+    .nav-container {
+        flex-flow: column;
+        align-items: center;
+    }
+    
+}
+
+

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=6">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0>
     <meta property="og: title" content="Document">
     <meta property="og: type" content="website">
     <meta property="og: image" content="https://littlelemon">
@@ -13,10 +13,24 @@
     <meta property="og:description" content="">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        .title-container{
+            display: flex;
+            justify-content: space-between;
+    align-items: center;
+        }
+    </style>
 </head>
 
 <body>
+   <nav class="title-container" id="tips"><h2 class="name_title">Meleyotan Oyeleke</h2>
+    <div class="hamburger-container"><img id="hamburger" src="./assets/img/hamburger.png" data-hamburger="./assets/img/hamburger.png" 
+     data-cancel="./assets/img/cancel_icon.png" alt="" width="30px" height="30px">
+    </div>
+    </nav>
     <main>
+
+
         <!-- <div class="flex-container">
             <div class="box box1"> One..</div>
             <div class="box box2"> Two..</div>
@@ -27,13 +41,15 @@
             <div class="box box7"> Seven..</div>
         </div> -->
 
+
         <!--Navigation bar-->
-        <div class="nav-container">
-            <p>Home</p>
-            <p>Work</p>
-            <p>Project</p>
-            <p>Contact</p>
+        <div class="nav-container" id="list">
+            <p><a href="">Home</a></p>
+            <p><a href="">Work</a></p>
+            <p><a href="">Project</a></p>
+            <p><a href="">Contact</a></p>
         </div>
+
 
         <!--Search bar-->
         <div class="search-container">
@@ -55,47 +71,122 @@
             <div><img src="./assets/img/desert.jpg" alt="image of a desert"></div>
         </section>
 
-  
+
 
 
     </main>
 
-        <!-- Iconscout search component -->
-        
-        <div class="ic-search-container">
-            <form class="form-ic-search-container">
-                <select id="ic_asset_type" name="asset_type">
-                    <option value="all_assets">All Assets</option>
-                    <option value="t3dillustrations">3D Illustrations</option>
-                    <option value="animations">Lottie Animations</option>
-                    <option value="illustrations">Illustrations</option>
-                    <option value="icons">Icons</option>
-                    <option value="illustration_kits">Illustration Kits</option>
-                </select>
-                <label for="id_input_ic_search" class="label"><input id="id_input_ic_search" class="input-ic-search"
-                        type="search" placeholder="enter your search here..."><img src="./assets/img/search_icon.png"
-                        alt="search icon" width="16px" height="16px" class="search-icon"></label>
-        
-                <button class="search-by-image-button">Search</button>
-            </form>
-        
-        
-        </div>
-        <!--Bar chart-->
-        <section class="bar-chart">
-            <div class="bar-01">
+    <!-- Iconscout search component -->
+
+    <div class="ic-search-container">
+        <form class="form-ic-search-container">
+            <select id="ic_asset_type" name="asset_type">
+                <option value="all_assets">All Assets</option>
+                <option value="t3dillustrations">3D Illustrations</option>
+                <option value="animations">Lottie Animations</option>
+                <option value="illustrations">Illustrations</option>
+                <option value="icons">Icons</option>
+                <option value="illustration_kits">Illustration Kits</option>
+            </select>
+            <label for="id_input_ic_search" class="label"><input id="id_input_ic_search" class="input-ic-search"
+                    type="search" placeholder="enter your search here..."><img src="./assets/img/search_icon.png"
+                    alt="search icon" width="16px" height="16px" class="search-icon"></label>
+
+            <button class="search-by-image-button">Search</button>
+        </form>
+
+
+    </div>
+
+    <!--Bar chart-->
+    <section class="bar-chart">
+        <div class="bar-01">
             <div class="b1 b01" style="background-color: cadetblue;"></div>
             <div class="b1 b02" style="background-color: rgb(75, 182, 33);"></div>
             <div class="b1 b03" style="background-color: rgb(161, 39, 135);"></div>
-            </div>
-            
-            <div class="bar-02">
-                <div class="b1 b04" style="background-color: cadetblue;"></div>
-                <div class="b1 b05" style="background-color: rgb(75, 182, 33);"></div>
-                <div class="b1 b06" style="background-color: rgb(161, 39, 135);"></div>
-            </div>
-            
-        </section>
+        </div>
+
+        <div class="bar-02">
+            <div class="b1 b04" style="background-color: cadetblue;"></div>
+            <div class="b1 b05" style="background-color: rgb(75, 182, 33);"></div>
+            <div class="b1 b06" style="background-color: rgb(161, 39, 135);"></div>
+        </div>
+
+    </section>
+
+    <!--Grid -->
+    <section class="grid-container">
+        <div class="grid-item g-item-1"></div>
+        <div class="grid-item g-item-2"></div>
+        <div class="grid-item g-item-3"></div>
+        <div class="grid-item g-item-4"></div>
+        <div class="grid-item g-item-5"></div>
+        <div class="grid-item g-item-6"></div>
+        <div class="grid-item g-item-7"></div>
+        <div class="grid-item g-item-8"></div>
+    </section>
+
+    <!--Grid template areas-->
+    <section class="grid-template-container">
+        <div class="grid-template-item g-header"></div>
+        <div class="grid-template-item g-main"></div>
+        <div class="grid-template-item g-sidebar"></div>
+        <div class="grid-template-item g-footer"></div>
+    </section>
+    
+    <section class="calendar-container">
+        <h4  class="calendar-month" style="font-family: 'Times New Roman', Times, serif;">May 2025</h4>
+        <div class="calendar-weeks week-0" style="font-family: 'Times New Roman', Times, serif;">
+            <div class="text-control-calendar-day-title calendar-day-title" style="font-family: 'Times New Roman', Times, serif;">M</div>
+            <div class="text-control-calendar-day-title calendar-day-title" style="font-family: 'Times New Roman', Times, serif;">T</div>
+            <div class="text-control-calendar-day-title calendar-day-title" style="font-family: 'Times New Roman', Times, serif;">W</div>
+            <div class="text-control-calendar-day-title calendar-day-title" style="font-family: 'Times New Roman', Times, serif;">T</div>
+            <div class="text-control-calendar-day-title calendar-day-title" style="font-family: 'Times New Roman', Times, serif;">F</div>
+            <div class="text-control-calendar-day-title calendar-day-title" style="font-family: 'Times New Roman', Times, serif;">S</div>
+            <div class="text-control-calendar-day-title calendar-day-title" style="font-family: 'Times New Roman', Times, serif;">S</div>
+        </div>
+        <div class="calendar-weeks week-1">
+            <div class="calendar-days calendar-day-1"></div>
+            <div class="calendar-days calendar-day-2"></div>
+            <div class="calendar-days calendar-day-3"></div>
+            <div class="calendar-days calendar-day-4"></div>
+            <div class="calendar-days calendar-day-5"></div>
+            <div class="calendar-days calendar-day-6"></div>
+            <div class="calendar-days calendar-day-7"></div>
+        </div>
+        <div class="calendar-weeks week-2">
+            <div class="calendar-days calendar-day-8"></div>
+            <div class="calendar-days calendar-day-9"></div>
+            <div class="calendar-days calendar-day-10"></div>
+            <div class="calendar-days calendar-day-11"></div>
+            <div class="calendar-days calendar-day-12"></div>
+            <div class="calendar-days calendar-day-13"></div>
+            <div class="calendar-days calendar-day-14"></div>
+        </div>
+        <div class="calendar-weeks week-3">
+            <div class="calendar-days calendar-day-15"></div>
+            <div class="calendar-days calendar-day-16"></div>
+            <div class="calendar-days calendar-day-17"></div>
+            <div class="calendar-days calendar-day-18"></div>
+            <div class="calendar-days calendar-day-19"></div>
+            <div class="calendar-days calendar-day-20"></div>
+            <div class="calendar-days calendar-day-21"></div>
+
+        </div>
+        <div class="calendar-weeks week-4">
+            <div class="calendar-days calendar-day-22"></div>
+            <div class="calendar-days calendar-day-23"></div>
+            <div class="calendar-days calendar-day-24"></div>
+            <div class="calendar-days calendar-day-25"></div>
+            <div class="calendar-days calendar-day-26"></div>
+            <div class="calendar-days calendar-day-27"></div>
+            <div class="calendar-days calendar-day-28"></div>
+        </div>
+    </section>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="./assets/js/script.js"></script>
 
 </body>
 

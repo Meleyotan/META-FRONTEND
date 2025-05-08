@@ -1,3 +1,6 @@
+const { PI } = Math.PI
+console.log(PI)
+
 let list_target = document.getElementById("list");
 let hamburger_target = document.getElementById("hamburger");
 

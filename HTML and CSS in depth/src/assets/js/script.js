@@ -5,7 +5,7 @@ let list_target = document.getElementById("list");
 let hamburger_target = document.getElementById("hamburger");
 
 window.addEventListener("resize", () => {
-  if (window.innerWidth <= 375) {
+  if (window.innerWidth <=425) {
       list_target.style.display = "none";
       hamburger_target.style.display=""
       hamburger_target.setAttribute("src", "./assets/img/hamburger.png"); // Reset to hamburger icon
